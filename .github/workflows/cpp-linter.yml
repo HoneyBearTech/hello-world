@@ -10,7 +10,7 @@ jobs:
       - uses: cpp-linter/cpp-linter-action@v2
         id: linter
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.LINT_TOKEN }}
         with:
           style: file
 
